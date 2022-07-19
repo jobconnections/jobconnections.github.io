@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
   <meta charset="utf-8">
@@ -50,7 +50,7 @@
       <div class="social-links d-none d-md-flex align-items-center">
         <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
         <a href="https://wa.me/+8108072359594" target="_blank" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
-        <a href="https://wa.me/+8108072359594" target="_blank" class="whatsapp"><i class="bi bi-line"></i></a>
+        <a href="#" target="_blank" class="line"><i class="bi bi-line"></i></a>
         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
         <!-- <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a> -->
@@ -348,48 +348,97 @@
         <div class="row">
 
           <div class="col-lg-8 col-md-12 footer-contact">
-            <img src="assets\img\logo-horizontal.png" width="238" height="40">
-            <br><br>
             <div class="row">
               <div class="col-lg-4 col-md-6 footer-contact">
+                <img src="assets\img\logo-horizontal.png" width="238" height="40">
+                <br><br>
                 <p>
                   <b>本社</b><br>
                   〒511-0994<br>
                   三重県四日市市笹川5-65-38
-                  <br><br>
-                  <strong>電話番号：</strong> <a type="tel">059-327-5215</a><br>
-                  <strong>E-MAIL：</strong> info@jobconnections.jp<br>
                 </p>
               </div>
               <div class="col-lg-4 col-md-6 footer-contact">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="bi bi-building"></i> 会社概要
+                </button>
+                <br><br>
                 <p>
                   <b>営業所</b><br>
                   〒511-0994<br>
                   三重県四日市市笹川5-65-37
                 </p>
               </div>
-              <hr>
-              <h4>Our Social Networks</h4>
-              <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            </div>
+            <div class="col-lg-4 col-md-6 footer-contact">
               <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                 <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://wa.me/+8108072359594" target="_blank" class="whatsapp"><i class='bx bxl-whatsapp'></i></a>
+                <a href="#" class="line"><i class="bi bi-line"></i></a>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          </div>
+          <div class="col-lg-4 col-md-6 footer-links">
             <h4>サイトマップ</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#hero">ホーム</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#why">選ばられる理由</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#feature">特徴</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#contact">お問い合わせ</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">会社概要</a></li>
             </ul>
+          </div>
+          <!-- Button trigger modal -->
+          
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">会社概要</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる"></button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-sm table-bordered">
+                    <tbody>
+                      <tr>
+                        <td>会社名</td>
+                        <td>ＪＯＢ　ＣＯＮＮＥＣＴＩＯＮＳ株式会社</td>
+                      </tr> 
+                      <tr>
+                        <td>代表者</td>
+                        <td>デソウザ ジョン</td>
+                      </tr> 
+                      <tr>
+                        <td>所在地</td>
+                        <td>三重県四日市市笹川5-65-38</td>
+                      </tr> 
+                      <tr>
+                        <td>資本金</td>
+                        <td>2000万円</td>
+                      </tr> 
+                      <tr>
+                        <td>事業内容</td>
+                        <td>労働者派遣事業</td>
+                      </tr> 
+                      <tr>
+                        <td>設立</td>
+                        <td>令和4年5月9日</td>
+                      </tr> 
+                      <tr>
+                        <td>従業員数</td>
+                        <td>15名</td>
+                      </tr> 
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- <div class="col-lg-3 col-md-6 footer-links">
@@ -434,9 +483,12 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/jquery.js"></script>
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/customize.js"></script>
 
 </body>
 
