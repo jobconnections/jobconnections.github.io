@@ -72,6 +72,15 @@
       text-decoration: underline;
       cursor: pointer;
     }
+    .note {
+      font-size: 0.85em;         /* 通常より少し小さめ */
+      color: #888;               /* 薄めのグレーで主張しすぎない */
+      margin-top: 0.5em;         /* 上に少し余白 */
+      line-height: 1.5;          /* 読みやすさを確保 */
+      font-style: italic;        /* 斜体で注意書きらしさを演出（任意） */
+      letter-spacing: 0.02em;    /* わずかに文字間隔を広げる（自然な印象） */
+    }
+
   </style>
 
   <!-- ======= Top Bar ======= -->
@@ -288,7 +297,10 @@
             <div class="info-box  mb-4">
               <i class="bx bx-envelope"></i>
               <h3>メール</h3>
-                <p><a id="infoMail" onclick="copyMailAddress()">info★jobconnections.jp</a></p>
+                <p>
+                  <a id="infoMail" onclick="copyMailAddress()">info★jobconnections.jp</a>
+                  <br><span class="note">※クリックするとコピーできます</span>
+                </p>
             </div>
           </div>
 
