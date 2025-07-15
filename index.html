@@ -40,6 +40,20 @@
     gtag('config', 'G-JTX06Q0Z23');
   </script>
 
+  <script>
+    function copyMailAddress() {
+      const rawMail = document.getElementById("infoMail").innerText;
+      const realEmail = rawMail.replace("★", "@");
+      navigator.clipboard.writeText(realEmail)
+        .then(() => {
+          alert("メールアドレスをコピーしました: " + realEmail);
+        })
+        .catch(err => {
+          alert("コピーに失敗しました: " + err);
+        });
+    }
+  </script>
+
   <!-- =======================================================
   * Template Name: BizLand - v3.7.0
   * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
@@ -49,6 +63,16 @@
 </head>
 
 <body>
+
+  <style>
+    #infoMail {
+      color: #106eea;
+    }
+    #infoMail:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  </style>
 
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-flex align-items-center">
@@ -264,7 +288,7 @@
             <div class="info-box  mb-4">
               <i class="bx bx-envelope"></i>
               <h3>メール</h3>
-                <p><a>info@jobconnections.jp</a></p>
+                <p><a id="infoMail" onclick="copyMailAddress()">info★jobconnections.jp</a></p>
             </div>
           </div>
 
@@ -526,7 +550,7 @@
         status.innerHTML = "フォーム送信中にエラーが発生したようです。時間をおいて、再度お試しください。"
       });
     }
-    form.addEventListener("submit", handleSubmit)
+    form.addEventListener("submit", handleSubmit);
   </script>
 
 </body>
