@@ -43,7 +43,7 @@
   <script>
     function copyMailAddress() {
       const rawMail = document.getElementById("infoMail").innerText;
-      const realEmail = rawMail.replace("★", "@");
+      const realEmail = rawMail.replace("X", "@");
       navigator.clipboard.writeText(realEmail)
         .then(() => {
           alert("メールアドレスをコピーしました: " + realEmail);
@@ -298,7 +298,7 @@
               <i class="bx bx-envelope"></i>
               <h3>メール</h3>
                 <p>
-                  <a id="infoMail" onclick="copyMailAddress()">info★jobconnections.jp</a>
+                  <a id="infoMail" onclick="copyMailAddress()">infoXjobconnections.jp</a>
                   <br><span class="note">※クリックするとコピーできます</span>
                 </p>
             </div>
