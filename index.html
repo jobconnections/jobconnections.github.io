@@ -79,6 +79,9 @@
       font-style: italic;        /* 斜体で注意書きらしさを演出（任意） */
       letter-spacing: 0.02em;    /* わずかに文字間隔を広げる（自然な印象） */
     }
+    span.rubi {
+      font-size: 0.7em;
+    }
 
   </style>
 
@@ -118,7 +121,7 @@
           <li><a class="nav-link scrollto" href="#feature">特徴</a></li>
           <li><a class="nav-link scrollto" href="#contact">お問い合わせ</a></li>
           <li>
-            <button type="button" class="btn btn-primary ms-sm-0 ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-primary ms-sm-0 ms-3" data-bs-toggle="modal" data-bs-target="#corporateInfoModal">
               <i class="bi bi-building"></i> 会社概要
             </button>
           </li>
@@ -376,19 +379,19 @@
                 <br><br>
                 <p>
                   <b>本社</b><br>
-                  〒511-0994<br>
+                  〒511-0944<br>
                   三重県四日市市笹川5-65-38
                 </p>
               </div>
               <div class="col-lg-4 col-md-6 footer-contact">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#corporateInfoModal">
                   <i class="bi bi-building"></i> 会社概要
                 </button>
                 <br><br>
                 <p>
                   <b>営業所</b><br>
-                  〒511-0994<br>
-                  三重県四日市市笹川5-65-37
+                  〒511-0944<br>
+                  三重県四日市市笹川5-65-37 2階
                 </p>
               </div>
             </div>
@@ -415,11 +418,11 @@
           
 
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="corporateInfoModal" tabindex="-1" aria-labelledby="corporateInfoModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">会社概要</h5>
+                  <h5 class="modal-title" id="corporateInfoModalLabel">会社概要</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる"></button>
                 </div>
                 <div class="modal-body">
@@ -427,7 +430,10 @@
                     <tbody>
                       <tr>
                         <td>会社名</td>
-                        <td>ＪＯＢ　ＣＯＮＮＥＣＴＩＯＮＳ株式会社</td>
+                        <td>
+                          <span class="rubi">　ジョブ　　　コネクションズ</span>
+                          <br>ＪＯＢ　ＣＯＮＮＥＣＴＩＯＮＳ株式会社
+                        </td>
                       </tr> 
                       <tr>
                         <td>サイト</td>
@@ -455,7 +461,7 @@
                       </tr> 
                       <tr>
                         <td>事業内容</td>
-                        <td>労働者派遣事業</td>
+                        <td>労働者派遣事業、有料職業紹介事業</td>
                       </tr> 
                       <tr>
                         <td>労働者派遣事業許可証</td>
@@ -463,6 +469,15 @@
                           <a href="https://jinzai.hellowork.mhlw.go.jp/JinzaiWeb/GICB102010.do?screenId=GICB102010&action=detail&detkey_Detail=%E6%B4%BE24-300801%2C1+++++"
                              target="_blank"
                             >派24-300801
+                          </a>
+                        </td>
+                      </tr> 
+                      <tr>
+                        <td>有料職業紹介事業許可証</td>
+                        <td>
+                          <a href="https://jinzai.hellowork.mhlw.go.jp/JinzaiWeb/GICB102030.do?screenId=GICB102030&action=detail&detkey_Detail=24-%E3%83%A6-300443%2C1+++++"
+                             target="_blank"
+                            >24-ユ-300443
                           </a>
                         </td>
                       </tr> 
