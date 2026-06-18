@@ -49,35 +49,35 @@ function updateBtnUI(btn, email, isCopied) {
 const subjectSelect = document.getElementById('subject');
 const contentsArea = document.getElementById('contents');
 
-const templates = {
-    "現場の定着率・離職率に関するご相談": "【現在の課題】\n（例：採用しても数ヶ月で辞めてしまう、夜勤の定着が悪い 等）\n\n\n【希望するサポート】\n（例：定着率を上げるための現場フォローをお願いしたい、など）\n\n\n【その他・備考】\n",
-    
-    "急な人材不足・増員に関するご相談": "【必要な人数と時期】\n（例：来月から〇名、早急に〇名追加したい 等）\n\n\n【業務内容・求めるスキル】\n（例：ライン作業、フォークリフト免許必須、など）\n\n\n【その他・備考】\n",
-    
-    "外国人材の活用・労務管理に関するご相談": "【現状と課題】\n（例：外国人材の受け入れに興味があるが手続きが不安、言語の壁でトラブルが起きている 等）\n\n\n【聞いてみたいこと】\n（例：生活サポートや通訳の具体的な内容を知りたい、など）\n\n\n【その他・備考】\n",
-    
-    "その他のお問い合わせ": "ご質問やご相談内容を自由にご記入ください。\n\n"
-};
+let templates = {}; 
+let templateValues = new Set();
+
+// サイト読み込み時にJSONを取得
+fetch('assets/templates/subject.json')
+    .then(response => response.json())
+    .then(data => {
+        templates = data;
+        templateValues = new Set(Object.values(templates));
+    })
+    .catch(err => console.error("テンプレートの読み込みに失敗しました", err));
 
 // テンプレート切り替え機能
 if (subjectSelect && contentsArea) {
-    subjectSelect.addEventListener('change', function() {
-        const selectedValue = this.value;
-        const currentValue = contentsArea.value;
-        const isUnmodified = currentValue === "" || Object.values(templates).includes(currentValue);
+    subjectSelect.addEventListener('change', (e) => {
+        const selectedValue = e.target.value;
+        const template = templates[selectedValue];
         
-        if (templates[selectedValue] && isUnmodified) {
-            contentsArea.value = templates[selectedValue];
-            
-            // 背景色を一瞬青くして変更を通知するアニメーション
-            contentsArea.classList.remove('bg-gray-50');
-            contentsArea.classList.add('bg-green-100');
-            setTimeout(() => {
-                contentsArea.classList.remove('bg-green-100');
-                contentsArea.classList.add('bg-gray-50');
-            }, 500);
+        // テンプレートが存在し、かつ「空」または「以前のテンプレート」なら上書き
+        if (template && (contentsArea.value === "" || templateValues.has(contentsArea.value))) {
+            contentsArea.value = template;
+            flashBackground(contentsArea);
         }
     });
+}
+
+function flashBackground(el) {
+    el.classList.replace('bg-gray-50', 'bg-green-100');
+    setTimeout(() => el.classList.replace('bg-green-100', 'bg-gray-50'), 500);
 }
 
 // 詳細欄フォーカス連動ツールチップ機能
