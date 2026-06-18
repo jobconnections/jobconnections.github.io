@@ -581,13 +581,13 @@
                                 <div>
                                     <label class="block text-sm font-medium text-gray-700">
                                         会社名 <span class="text-red-500">*</span>
-                                        <input type="text" name="company" id="company" autocomplete="company" placeholder="例: 株式会社〇〇" required class="w-full mt-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white">
+                                        <input type="text" name="company" id="company" autocomplete="organization" placeholder="例: 株式会社〇〇" required class="w-full mt-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white">
                                     </label>
                                 </div>
                                 <div>
                                     <label class="block text-sm font-medium text-gray-700">
                                         電話番号 <span class="text-red-500">*</span>
-                                        <input type="tel" name="phone" id="phone" autocomplete="phone" placeholder="例: 000-0000-0000" required class="w-full mt-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white">
+                                        <input type="tel" name="phone" id="phone" autocomplete="tel" placeholder="例: 000-0000-0000" required class="w-full mt-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white">
                                     </label>
                                 </div>
                             </div>
@@ -607,7 +607,7 @@
                                     <label for="subject" class="block text-sm font-medium text-gray-700">ご相談内容（表題） <span class="text-red-500">*</span></label>
                                 </div>
                                 <div class="relative">
-                                    <select name="subject" id="subject" autocomplete="subject" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white appearance-none cursor-pointer font-medium text-gray-700">
+                                    <select name="subject" id="subject" autocomplete="off" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white appearance-none cursor-pointer font-medium text-gray-700">
                                         <option value="" disabled selected>以下からご希望の相談内容を選択してください</option>
                                         <option value="現場の定着率・離職率に関するご相談">現場の定着率・離職率に関するご相談</option>
                                         <option value="急な人材不足・増員に関するご相談">急な人材不足・増員に関するご相談</option>
@@ -631,7 +631,7 @@
                                         上の「ご相談内容（表題）」を選択すると、ここに入力用のテンプレートが自動的に挿入されます！
                                         <div class="absolute top-full left-6 -mt-1 border-4 border-transparent border-t-blue-600"></div>
                                     </div>
-                                    <textarea name="contents" id="contents" autocomplete="contents" rows="7" placeholder="上の「ご相談内容」を選択すると、ここに入力用のテンプレートが表示されます。" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white leading-relaxed resize-y"></textarea>
+                                    <textarea name="contents" id="contents" autocomplete="off" rows="7" placeholder="上の「ご相談内容」を選択すると、ここに入力用のテンプレートが表示されます。" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white leading-relaxed resize-y"></textarea>
                                 </div>
                             </div>
 
