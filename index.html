@@ -27,9 +27,11 @@
     <meta property="og:locale" content="ja_JP">
     <meta name="twitter:card" content="summary_large_image">
 
-    <!-- フォント・主要画像のプリロード -->
-    <link rel="preload" href="assets/webfonts/noto-sans-jp-v56-japanese_latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- フォント・主要画像のプリロード (LCP・モバイル高速化) -->
+    <link rel="preload" href="assets/img/hero-section-background.avif" as="image" type="image/avif">
     <link rel="preload" href="assets/img/logo.avif" as="image" type="image/avif">
+    <link rel="preload" href="assets/webfonts/noto-sans-jp-v56-japanese_latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/webfonts/noto-sans-jp-v56-japanese_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
 
     <!-- スタイルシート (FontAwesomeの非同期読み込み) -->
     <link rel="stylesheet" href="assets/css/tailwind.min.css">
