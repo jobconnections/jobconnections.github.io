@@ -5,46 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JOB CONNECTIONS株式会社 | 製造現場の課題解決パートナー</title>
     <meta name="description" content="三重県四日市市の人材派遣・紹介会社。15年の現場経験と独自のシステム管理で、製造現場の人手不足や定着率の課題を根本から解決します。工場の稼働を止めない「現場力」が強みです。">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#185B9D">
+
+    <!-- SEO 正規化 (Canonical) -->
+    <link rel="canonical" href="https://www.jobconnections.jp/">
 
     <!-- Favicons -->
-    <!-- <link href="assets/img/favicon.png" rel="icon"> -->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- OGP (SNSシェア時の設定) -->
+    <!-- OGP (SNS・検索エンジン用) -->
     <meta property="og:title" content="JOB CONNECTIONS株式会社 | 製造現場の課題解決パートナー">
     <meta property="og:description" content="15年の現場経験×システム管理の少数精鋭で、製造現場の人手不足を解決します。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.jobconnections.jp/">
+    <meta property="og:image" content="https://www.jobconnections.jp/assets/img/logo.avif">
+    <meta property="og:site_name" content="JOB CONNECTIONS株式会社">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
 
-    <!-- スタイルシート -->
+    <!-- フォント・主要画像のプリロード -->
+    <link rel="preload" href="assets/webfonts/noto-sans-jp-v56-japanese_latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/img/logo.avif" as="image" type="image/avif">
+
+    <!-- スタイルシート (FontAwesomeの非同期読み込み) -->
     <link rel="stylesheet" href="assets/css/tailwind.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/font.awesome.min.css">
     <link rel="stylesheet" href="assets/css/font.google.css">
+    <link rel="stylesheet" href="assets/css/font.awesome.min.css" media="print" onload="this.media='all'">
 
-    <!-- 構造化データ (ローカルSEO対策) -->
+    <!-- 構造化データ (ローカルSEO・派遣事業者・FAQリッチリザルト) -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "JOB CONNECTIONS株式会社",
-      "image": "https://www.jobconnections.jp/logo.webp",
-      "url": "https://www.jobconnections.jp/",
-      "telephone": "059-327-5215",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "笹川五丁目65番地38",
-        "addressLocality": "四日市市",
-        "addressRegion": "三重県",
-        "postalCode": "510-0944",
-        "addressCountry": "JP"
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": ["EmploymentAgency", "LocalBusiness"],
+        "name": "JOB CONNECTIONS株式会社",
+        "image": "https://www.jobconnections.jp/assets/img/logo.avif",
+        "url": "https://www.jobconnections.jp/",
+        "telephone": "059-327-5215",
+        "priceRange": "￥￥",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "笹川五丁目65番地38",
+          "addressLocality": "四日市市",
+          "addressRegion": "三重県",
+          "postalCode": "510-0944",
+          "addressCountry": "JP"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 34.9392,
+          "longitude": 136.5847
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "最短でいつから派遣してもらえますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ご依頼の職種や条件によりますが、最短でご相談から1〜2週間程度での就業開始が可能です。急な欠員などでお急ぎの場合は、まずは一度状況をお聞かせください。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "夜勤のみ、または短期の依頼は可能ですか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "もちろん可能です。夜勤専属や交替制シフト、あるいは繁忙期のみの数ヶ月間の短期派遣など、貴社の生産計画に合わせた柔軟な人員配置をご提案いたします。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "外国籍スタッフの在留資格などの管理はお任せできますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "はい、完全にお任せください。弊社では就労可能な在留資格の厳格な確認から、更新時期の管理、行政機関への手続きサポートまで自社システムを用いて徹底して行っております。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "派遣ではなく、正社員候補の紹介（紹介予定派遣）は可能ですか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "はい、可能です。弊社は「有料職業紹介事業」の許可も取得しております。一定期間派遣スタッフとして見極めていただいた後、双方合意のもとで貴社の直接雇用へ切り替える仕組みもご活用いただけます。"
+            }
+          }
+        ]
       }
-    }
+    ]
     </script>
-
 </head>
 <body class="font-sans text-gray-800 antialiased bg-gray-50 flex flex-col min-h-screen">
 
@@ -54,10 +111,10 @@
             <div class="flex items-center">
                 <!-- ロゴ画像 -->
                 <a href="#home" class="hover:opacity-80 transition flex items-center">
-                    <img src="assets/img/logo.avif" alt="JOB CONNECTIONS株式会社 ロゴ" class="h-10 w-auto">
+                    <img src="assets/img/logo.avif" alt="JOB CONNECTIONS株式会社 ロゴ" class="h-10 w-auto" width="160" height="40">
                 </a>
             </div>
-            <!-- PC用 ナビゲーションメニュー (項目を整理) -->
+            <!-- PC用 ナビゲーションメニュー -->
             <nav class="hidden lg:flex space-x-6 text-sm font-medium">
                 <a href="#concept" class="text-gray-600 hover:text-primary transition">選ばれる理由</a>
                 <a href="#services" class="text-gray-600 hover:text-primary transition">対応業務</a>
@@ -74,7 +131,7 @@
             
             <!-- スマホ用 ハンバーガーボタン -->
             <div class="lg:hidden flex items-center">
-                <button id="mobile-menu-button" class="text-gray-600 hover:text-primary focus:outline-none p-2">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-primary focus:outline-none p-2" aria-label="メニューを開く">
                     <i class="fa-solid fa-bars text-2xl w-6 text-center"></i>
                 </button>
             </div>
@@ -98,655 +155,550 @@
 
     <!-- メインコンテンツ領域 -->
     <main class="flex-grow">
-        
-        <!-- ========================================== -->
-        <!-- ページ：トップページ (#home) -->
-        <!-- ========================================== -->
-        <div id="page-home" class="page-content active">
-            <!-- Hero Section (h1を使用) -->
-            <section class="hero-pattern text-white py-24 md:py-32 relative">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center md:text-left">
-                    <span class="inline-block py-1 px-3 rounded-full bg-white/20 text-white text-sm font-bold tracking-wider mb-6 border border-white/40">
-                        製造現場の課題解決パートナー
-                    </span>
-                    <h1 class="text-3xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight drop-shadow-lg">
-                        現場の「人手不足」と「定着率」<br class="hidden md:block">
-                        そろそろ根本から解決しませんか？
-                    </h1>
-                    <p class="text-lg md:text-2xl font-medium mb-10 max-w-3xl drop-shadow-md leading-relaxed text-blue-50">
-                        私たちは人材を「集める」だけの派遣会社ではありません。<br>
-                        経営陣自らが現場と管理の最前線に立ち、貴社の工場稼働を支え続ける現場の一員です。
+        <!-- Hero Section -->
+        <section id="home" class="hero-pattern text-white py-24 md:py-32 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center md:text-left">
+                <span class="inline-block py-1 px-3 rounded-full bg-white/20 text-white text-sm font-bold tracking-wider mb-6 border border-white/40">
+                    製造現場の課題解決パートナー
+                </span>
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight drop-shadow-lg">
+                    現場の「人手不足」と「定着率」<br class="hidden md:block">
+                    そろそろ根本から解決しませんか？
+                </h1>
+                <p class="text-lg md:text-2xl font-medium mb-10 max-w-3xl drop-shadow-md leading-relaxed text-blue-50">
+                    私たちは人材を「集める」だけの派遣会社ではありません。<br>
+                    経営陣自らが現場と管理の最前線に立ち、貴社の工場稼働を支え続ける現場の一員です。
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#concept" class="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg transition shadow-xl text-center">
+                        選ばれる理由を見る
+                    </a>
+                    <a href="#contact-form" class="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full font-bold text-lg transition shadow-xl text-center">
+                        まずは無料相談をする
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Concept Section (強み) -->
+        <section id="concept" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <p class="text-sm font-bold text-secondary tracking-widest uppercase mb-2">Our Strength</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 section-title">「現場力」×「システム管理」の少数精鋭</h2>
+                    <p class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                        JOB CONNECTIONSが選ばれる最大の理由は、経営陣による直接対応体制にあります。<br class="hidden md:block">
+                        現場を知り尽くした経験と、ITによる正確な労務管理を掛け合わせることで、<br class="hidden md:block">
+                        貴社の工場稼働を止めず、法令リスクも排除した安心の『人財』をご提案します。
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                        <a href="#concept" class="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg transition shadow-xl text-center">
-                            選ばれる理由を見る
-                        </a>
-                        <a href="#contact-form" class="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full font-bold text-lg transition shadow-xl text-center">
-                            まずは無料相談をする
-                        </a>
-                    </div>
                 </div>
-            </section>
 
-            <!-- Concept Section (強み) -->
-            <section id="concept" class="py-20 bg-white">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="text-center mb-16">
-                        <h3 class="text-sm font-bold text-secondary tracking-widest uppercase mb-2">Our Strength</h3>
-                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 section-title">「現場力」×「システム管理」の少数精鋭</h2>
-                        <p class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                            JOB CONNECTIONSが選ばれる最大の理由は、経営陣による直接対応体制にあります。<br class="hidden md:block">
-                            現場を知り尽くした経験と、ITによる正確な労務管理を掛け合わせることで、<br class="hidden md:block">
-                            貴社の工場稼働を止めず、法令リスクも排除した安心の『人財』をご提案します。
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 shadow-sm relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-4 py-1 rounded-bl-lg opacity-80">STRENGTH.01</div>
+                        <div class="w-14 h-14 bg-blue-100 text-primary rounded-full flex items-center justify-center text-2xl mb-6">
+                            <i class="fa-solid fa-person-digging"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-primary pb-2 inline-block">15年のリアルな現場経験</h3>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+                            派遣先で起こりうるトラブル、夜勤の課題、外国人材のサポート等、<span class="font-bold text-primary">製造現場のあらゆる事態を10年以上経験したベテラン担当者</span>が直接サポートします。大抵のことは経験済みのため、トラブルの芽を未然に摘み取り、有事の際も的確かつスピーディに対処し、貴社の稼働を止めません。
                         </p>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 shadow-sm relative overflow-hidden">
-                            <div class="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-4 py-1 rounded-bl-lg opacity-80">STRENGTH.01</div>
-                            <div class="w-14 h-14 bg-blue-100 text-primary rounded-full flex items-center justify-center text-2xl mb-6">
-                                <i class="fa-solid fa-person-digging"></i>
-                            </div>
-                            <h4 class="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-primary pb-2 inline-block">15年のリアルな現場経験</h4>
-                            <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
-                                派遣先で起こりうるトラブル、夜勤の課題、外国人材のサポート等、<span class="font-bold text-primary">製造現場のあらゆる事態を10年以上経験したベテラン担当者</span>が直接サポートします。大抵のことは経験済みのため、トラブルの芽を未然に摘み取り、有事の際も的確かつスピーディに対処し、貴社の稼働を止めません。
-                            </p>
+                    <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 shadow-sm relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-secondary text-white text-xs font-bold px-4 py-1 rounded-bl-lg opacity-80">STRENGTH.02</div>
+                        <div class="w-14 h-14 bg-blue-100 text-secondary rounded-full flex items-center justify-center text-2xl mb-6">
+                            <i class="fa-solid fa-code"></i>
                         </div>
-
-                        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 shadow-sm relative overflow-hidden">
-                            <div class="absolute top-0 right-0 bg-secondary text-white text-xs font-bold px-4 py-1 rounded-bl-lg opacity-80">STRENGTH.02</div>
-                            <div class="w-14 h-14 bg-blue-100 text-secondary rounded-full flex items-center justify-center text-2xl mb-6">
-                                <i class="fa-solid fa-code"></i>
-                            </div>
-                            <h4 class="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-secondary pb-2 inline-block">安心と正確性のシステム管理</h4>
-                            <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
-                                弊社の総務に関しては、元プログラマが担当しており、派遣法や労務管理を徹底的に学び、自社専用の管理システムをゼロから設計・運用しています。<span class="font-bold text-secondary">労働局の監査においても指摘事項が極めて少ない</span>という実績が、属人化しない正確な書類管理と法令遵守の証明であり、企業様に一切のリスクを負わせません。
-                            </p>
-                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-secondary pb-2 inline-block">安心と正確性のシステム管理</h3>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+                            弊社の総務に関しては、元プログラマが担当しており、派遣法や労務管理を徹底的に学び、自社専用の管理システムをゼロから設計・運用しています。<span class="font-bold text-secondary">労働局の監査においても指摘事項が極めて少ない</span>という実績が、属人化しない正確な書類管理と法令遵守の証明であり、企業様に一切のリスクを負わせません。
+                        </p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- 【追加】対応業務一覧 Section -->
-            <section id="services" class="py-20 bg-gray-50 border-y border-gray-100">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="text-center mb-12">
-                        <h3 class="text-sm font-bold text-secondary tracking-widest uppercase mb-2">Service Area</h3>
-                        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 section-title">対応可能な業務領域</h2>
-                        <p class="text-gray-600 max-w-2xl mx-auto">製造現場の多岐にわたる業務に対応可能です。<br class="hidden md:block">下記以外の業務や、複数の工程をまたぐご依頼についてもお気軽にご相談ください。</p>
-                    </div>
-                    
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <!-- 業務1 -->
-                        <div class="bg-white rounded-xl p-8 text-center border border-gray-100 hover:shadow-lg transition hover:-translate-y-1">
-                            <div class="w-16 h-16 bg-blue-50 text-primary rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
-                                <i class="fa-solid fa-gears"></i>
-                            </div>
-                            <h4 class="text-lg font-bold text-gray-900 mb-3">ライン作業・組立</h4>
-                            <p class="text-sm text-gray-600 text-left">部品の組み立て、加工、ラインでの立ち作業など、人数と正確性が必要な工程に柔軟に対応します。</p>
-                        </div>
-                        <!-- 業務2 -->
-                        <div class="bg-white rounded-xl p-8 text-center border border-gray-100 hover:shadow-lg transition hover:-translate-y-1">
-                            <div class="w-16 h-16 bg-blue-50 text-primary rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
-                                <i class="fa-solid fa-clipboard-check"></i>
-                            </div>
-                            <h4 class="text-lg font-bold text-gray-900 mb-3">検品・仕分け・梱包</h4>
-                            <p class="text-sm text-gray-600 text-left">製品の目視検査、出荷前の仕分け、丁寧な梱包作業など、品質を担保する重要な工程をお任せください。</p>
-                        </div>
-                        <!-- 業務3 -->
-                        <div class="bg-white rounded-xl p-8 text-center border border-gray-100 hover:shadow-lg transition hover:-translate-y-1">
-                            <div class="w-16 h-16 bg-blue-50 text-primary rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
-                                <i class="fa-solid fa-truck-ramp-box"></i>
-                            </div>
-                            <h4 class="text-lg font-bold text-gray-900 mb-3">フォークリフト・物流</h4>
-                            <p class="text-sm text-gray-600 text-left">有資格者による安全なリフト操作、倉庫内のピッキング、入出荷作業など物流部門を強力にサポートします。</p>
-                        </div>
-                        <!-- 業務4 -->
-                        <div class="bg-white rounded-xl p-8 text-center border border-gray-100 hover:shadow-lg transition hover:-translate-y-1">
-                            <div class="w-16 h-16 bg-blue-50 text-primary rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
-                                <i class="fa-solid fa-screwdriver-wrench"></i>
-                            </div>
-                            <h4 class="text-lg font-bold text-gray-900 mb-3">機械オペレーター</h4>
-                            <p class="text-sm text-gray-600 text-left">NC旋盤やプレス機など、特定の機械操作。専門用語が飛び交う現場でも、通訳を交えてスムーズに導入可能です。</p>
-                        </div>
-                    </div>
+        <!-- 対応業務一覧 Section -->
+        <section id="services" class="py-20 bg-gray-50 border-y border-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <p class="text-sm font-bold text-secondary tracking-widest uppercase mb-2">Service Area</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 section-title">対応可能な業務領域</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">製造現場の多岐にわたる業務に対応可能です。<br class="hidden md:block">下記以外の業務や、複数の工程をまたぐご依頼についてもお気軽にご相談ください。</p>
                 </div>
-            </section>
-
-            <!-- 3つの試練 Section -->
-            <section id="trials" class="py-20 bg-accent">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="text-center mb-16">
-                        <h3 class="text-sm font-bold text-secondary tracking-widest uppercase mb-2">Selection Process</h3>
-                        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 section-title">3つの試練</h2>
-                        <p class="text-xl text-gray-700 font-medium">オンラインで見抜けない「人柄」と「覚悟」を試す</p>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div class="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-primary hover:-translate-y-2 transition duration-300">
-                            <div class="w-16 h-16 bg-blue-100 text-primary rounded-full flex items-center justify-center text-3xl mb-6 mx-auto">
-                                <i class="fa-solid fa-phone-volume"></i>
-                            </div>
-                            <div class="text-center mb-4">
-                                <span class="text-secondary font-bold text-lg">試練 #1</span>
-                                <h4 class="text-2xl font-bold text-gray-900 mt-1">初回通話</h4>
-                            </div>
-                            <p class="text-gray-600 leading-relaxed text-sm">
-                                初回通話時に弊社事務所への来訪を打診します。この段階で少しでも難色を示す候補者は、就業への意欲や覚悟が不足していると判断し、次選考へ進めることはありません。
-                            </p>
-                        </div>
-
-                        <div class="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-primary hover:-translate-y-2 transition duration-300">
-                            <div class="w-16 h-16 bg-blue-100 text-primary rounded-full flex items-center justify-center text-3xl mb-6 mx-auto">
-                                <i class="fa-solid fa-users"></i>
-                            </div>
-                            <div class="text-center mb-4">
-                                <span class="text-secondary font-bold text-lg">試練 #2</span>
-                                <h4 class="text-2xl font-bold text-gray-900 mt-1">対面での面談</h4>
-                            </div>
-                            <p class="text-gray-600 leading-relaxed text-sm">
-                                弊社は必ず事務所での対面面談を実施します。実際に会うことで、履歴書だけでは見えない人柄や製造現場への熱意を、ベテラン担当者が多角的に評価・選別します。
-                            </p>
-                        </div>
-
-                        <div class="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-primary hover:-translate-y-2 transition duration-300">
-                            <div class="w-16 h-16 bg-blue-100 text-primary rounded-full flex items-center justify-center text-3xl mb-6 mx-auto">
-                                <i class="fa-solid fa-industry"></i>
-                            </div>
-                            <div class="text-center mb-4">
-                                <span class="text-secondary font-bold text-lg">試練 #3</span>
-                                <h4 class="text-2xl font-bold text-gray-900 mt-1">「職場見学」の徹底</h4>
-                            </div>
-                            <p class="text-gray-600 leading-relaxed text-sm">
-                                採用後の「思っていたのと違う」をゼロにするため、必ず事前に職場を見て、感じて、納得した上で合意していただきます。このひと手間が、高い定着率と現場の安定に繋がります。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 3つの伴走 Section -->
-            <section id="support" class="py-20 bg-white">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="text-center mb-16">
-                        <h3 class="text-sm font-bold text-secondary tracking-widest uppercase mb-2">Our Support</h3>
-                        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 section-title">3つの伴走</h2>
-                        <p class="text-xl text-gray-700 font-medium">試練を越えた『人財』を、現場で輝かせ続ける</p>
-                    </div>
-
-                    <div class="space-y-12">
-                        <div class="flex flex-col md:flex-row items-center gap-8 bg-gray-50 rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100">
-                            <div class="md:w-1/4 flex justify-center">
-                                <div class="w-32 h-32 bg-white rounded-full shadow-md flex items-center justify-center text-primary text-5xl border-4 border-blue-50">
-                                    <i class="fa-solid fa-headset"></i>
-                                </div>
-                            </div>
-                            <div class="md:w-3/4 text-center md:text-left">
-                                <span class="inline-block bg-secondary text-white px-3 py-1 rounded text-sm font-bold mb-3">伴走 #1</span>
-                                <h4 class="text-2xl font-bold text-gray-900 mb-4">即応体制の現場フォロー</h4>
-                                <p class="text-gray-600 leading-relaxed">
-                                    急な欠勤やトラブル発生時にも、弊社スタッフが徹底した「報告・連絡・相談」で迅速に対応いたします。<br>
-                                    人事担当者様や現場責任者様の管理負担を極限まで減らし、貴重な工場のライン稼働を絶対に止めない体制を構築しています。
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="flex flex-col md:flex-row-reverse items-center gap-8 bg-gray-50 rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100">
-                            <div class="md:w-1/4 flex justify-center">
-                                <div class="w-32 h-32 bg-white rounded-full shadow-md flex items-center justify-center text-primary text-5xl border-4 border-blue-50 relative">
-                                    <i class="fa-solid fa-earth-asia"></i>
-                                    <div class="absolute -top-2 -right-2 bg-secondary text-white text-xs font-bold w-8 h-8 rounded-full flex items-center justify-center">EN</div>
-                                    <div class="absolute -bottom-2 -left-2 bg-secondary text-white text-xs font-bold w-8 h-8 rounded-full flex items-center justify-center">中文</div>
-                                </div>
-                            </div>
-                            <div class="md:w-3/4 text-center md:text-left">
-                                <span class="inline-block bg-secondary text-white px-3 py-1 rounded text-sm font-bold mb-3">伴走 #2</span>
-                                <h4 class="text-2xl font-bold text-gray-900 mb-4">言葉の壁をゼロに</h4>
-                                <p class="text-gray-600 leading-relaxed">
-                                    製造現場の労働力確保のため、弊社では意欲ある外国籍スタッフも多く活躍しています。<br>
-                                    現場での専門的な指示伝達や、万が一のトラブル発生時など、必要に応じて専任担当者が即時通訳を実施。言語の相違によるコミュニケーションロスや事故を未然に防ぎ、安全な現場運営をサポートします。
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="flex flex-col md:flex-row items-center gap-8 bg-gray-50 rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100">
-                            <div class="md:w-1/4 flex justify-center">
-                                <div class="w-32 h-32 bg-white rounded-full shadow-md flex items-center justify-center text-primary text-5xl border-4 border-blue-50">
-                                    <i class="fa-solid fa-shield-heart"></i>
-                                </div>
-                            </div>
-                            <div class="md:w-3/4 text-center md:text-left">
-                                <span class="inline-block bg-secondary text-white px-3 py-1 rounded text-sm font-bold mb-3">伴走 #3</span>
-                                <h4 class="text-2xl font-bold text-gray-900 mb-4">生活・行政手続きの支援</h4>
-                                <p class="text-gray-600 leading-relaxed">
-                                    複雑な在留資格の管理・更新サポートから、急な体調不良時の通院、役所等の行政機関への付き添いまで、就業時間外の生活面も徹底的にサポートします。<br>
-                                    スタッフが余計な不安を抱えず、目の前の仕事に100%集中できる環境を整えることが、長期的な定着率の向上に繋がっています。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 【追加】導入までの流れ Section -->
-            <section id="flow" class="py-20 bg-gray-900 text-white relative overflow-hidden">
-                <!-- 背景の装飾 -->
-                <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-primary opacity-20 blur-3xl"></div>
-                <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-secondary opacity-20 blur-3xl"></div>
                 
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                    <div class="text-center mb-16">
-                        <h3 class="text-sm font-bold text-secondary tracking-widest uppercase mb-2">Flow</h3>
-                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 section-title">導入までの流れ</h2>
-                        <p class="text-gray-400 max-w-2xl mx-auto">最短ルートで現場の課題解決へ。まずはお気軽にご相談ください。</p>
-                    </div>
-
-                    <div class="relative max-w-5xl mx-auto">
-                        <!-- デスクトップ用の横線 -->
-                        <div class="hidden md:block absolute top-12 left-0 w-full h-1 bg-gray-700 -translate-y-1/2 z-0"></div>
-                        
-                        <div class="flex flex-col md:flex-row justify-between gap-8 md:gap-4 relative z-10">
-                            <!-- Step 1 -->
-                            <div class="flex flex-col items-center text-center md:w-1/4">
-                                <div class="w-24 h-24 bg-gray-800 text-secondary rounded-full flex items-center justify-center text-3xl mb-6 border-4 border-gray-900 shadow-xl relative">
-                                    <i class="fa-solid fa-comments"></i>
-                                    <div class="absolute -top-3 -right-3 w-8 h-8 bg-primary text-white text-xs font-bold rounded-full flex items-center justify-center border-2 border-gray-900">01</div>
-                                </div>
-                                <h4 class="text-xl font-bold text-white mb-3">無料ご相談・ヒアリング</h4>
-                                <p class="text-sm text-gray-400 leading-relaxed">現場が抱える課題、必要な人員数、求めるスキルや就業時期などを丁寧にヒアリングいたします。</p>
-                            </div>
-                            
-                            <!-- Step 2 -->
-                            <div class="flex flex-col items-center text-center md:w-1/4">
-                                <div class="w-24 h-24 bg-gray-800 text-secondary rounded-full flex items-center justify-center text-3xl mb-6 border-4 border-gray-900 shadow-xl relative">
-                                    <i class="fa-solid fa-user-check"></i>
-                                    <div class="absolute -top-3 -right-3 w-8 h-8 bg-primary text-white text-xs font-bold rounded-full flex items-center justify-center border-2 border-gray-900">02</div>
-                                </div>
-                                <h4 class="text-xl font-bold text-white mb-3">人材選定・職場見学</h4>
-                                <p class="text-sm text-gray-400 leading-relaxed">「3つの試練」をクリアした最適な人材を選出し、必ず事前に職場見学を実施。ミスマッチを防ぎます。</p>
-                            </div>
-                            
-                            <!-- Step 3 -->
-                            <div class="flex flex-col items-center text-center md:w-1/4">
-                                <div class="w-24 h-24 bg-gray-800 text-secondary rounded-full flex items-center justify-center text-3xl mb-6 border-4 border-gray-900 shadow-xl relative">
-                                    <i class="fa-solid fa-file-signature"></i>
-                                    <div class="absolute -top-3 -right-3 w-8 h-8 bg-primary text-white text-xs font-bold rounded-full flex items-center justify-center border-2 border-gray-900">03</div>
-                                </div>
-                                <h4 class="text-xl font-bold text-white mb-3">ご契約・就業開始</h4>
-                                <p class="text-sm text-gray-400 leading-relaxed">派遣法に基づいた適正な契約手続きを行います。独自のシステム管理により、書類関係の手間も取らせません。</p>
-                            </div>
-                            
-                            <!-- Step 4 -->
-                            <div class="flex flex-col items-center text-center md:w-1/4">
-                                <div class="w-24 h-24 bg-primary text-white rounded-full flex items-center justify-center text-3xl mb-6 border-4 border-gray-900 shadow-xl relative">
-                                    <i class="fa-solid fa-handshake-angle"></i>
-                                    <div class="absolute -top-3 -right-3 w-8 h-8 bg-secondary text-white text-xs font-bold rounded-full flex items-center justify-center border-2 border-gray-900">04</div>
-                                </div>
-                                <h4 class="text-xl font-bold text-white mb-3">定期的な現場フォロー</h4>
-                                <p class="text-sm text-gray-300 leading-relaxed">就業後からが本当のスタートです。「3つの伴走」により、現場責任者様の負担を減らし定着率を高めます。</p>
-                            </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- 業務1 -->
+                    <div class="bg-white rounded-xl p-8 text-center border border-gray-100 hover:shadow-lg transition hover:-translate-y-1">
+                        <div class="w-16 h-16 bg-blue-50 text-primary rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                            <i class="fa-solid fa-gears"></i>
                         </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">ライン作業・組立</h3>
+                        <p class="text-sm text-gray-600 text-left">部品の組み立て、加工、ラインでの立ち作業など、人数と正確性が必要な工程に柔軟に対応します。</p>
                     </div>
-                    
-                    <div class="mt-16 text-center">
-                        <a href="#contact-form" class="inline-block bg-white text-gray-900 hover:bg-gray-100 px-8 py-4 rounded-full font-bold transition shadow-lg">
-                            今すぐ課題を相談してみる <i class="fa-solid fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 【追加】よくあるご質問 (FAQ) Section -->
-            <section id="faq" class="py-20 bg-white">
-                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="text-center mb-16">
-                        <h3 class="text-sm font-bold text-secondary tracking-widest uppercase mb-2">FAQ</h3>
-                        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 section-title">よくあるご質問</h2>
-                    </div>
-
-                    <div class="space-y-4">
-                        <!-- Q1 -->
-                        <details class="group bg-gray-50 rounded-lg border border-gray-200" open>
-                            <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-5 md:p-6 font-bold text-gray-900">
-                                <span class="flex items-start gap-3 text-base md:text-lg">
-                                    <span class="text-primary opacity-60 font-black">Q.</span>
-                                    最短でいつから派遣してもらえますか？
-                                </span>
-                                <i class="fa-solid fa-chevron-down transition duration-300 group-open:-rotate-180 text-gray-400"></i>
-                            </summary>
-                            <div class="px-5 md:px-6 pb-6 pt-0 text-gray-700 leading-relaxed text-sm md:text-base">
-                                <div class="flex items-start gap-3">
-                                    <span class="text-secondary opacity-60 font-black mt-1">A.</span>
-                                    <p>ご依頼の職種や条件によりますが、最短でご相談から1〜2週間程度での就業開始が可能です。急な欠員などでお急ぎの場合は、まずは一度状況をお聞かせください。</p>
-                                </div>
-                            </div>
-                        </details>
-
-                        <!-- Q2 -->
-                        <details class="group bg-gray-50 rounded-lg border border-gray-200">
-                            <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-5 md:p-6 font-bold text-gray-900">
-                                <span class="flex items-start gap-3 text-base md:text-lg">
-                                    <span class="text-primary opacity-60 font-black">Q.</span>
-                                    夜勤のみ、または短期の依頼は可能ですか？
-                                </span>
-                                <i class="fa-solid fa-chevron-down transition duration-300 group-open:-rotate-180 text-gray-400"></i>
-                            </summary>
-                            <div class="px-5 md:px-6 pb-6 pt-0 text-gray-700 leading-relaxed text-sm md:text-base">
-                                <div class="flex items-start gap-3">
-                                    <span class="text-secondary opacity-60 font-black mt-1">A.</span>
-                                    <p>もちろん可能です。夜勤専属や交替制シフト、あるいは繁忙期のみの数ヶ月間の短期派遣など、貴社の生産計画に合わせた柔軟な人員配置をご提案いたします。</p>
-                                </div>
-                            </div>
-                        </details>
-
-                        <!-- Q3 -->
-                        <details class="group bg-gray-50 rounded-lg border border-gray-200">
-                            <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-5 md:p-6 font-bold text-gray-900">
-                                <span class="flex items-start gap-3 text-base md:text-lg">
-                                    <span class="text-primary opacity-60 font-black">Q.</span>
-                                    外国籍スタッフの在留資格などの管理はお任せできますか？
-                                </span>
-                                <i class="fa-solid fa-chevron-down transition duration-300 group-open:-rotate-180 text-gray-400"></i>
-                            </summary>
-                            <div class="px-5 md:px-6 pb-6 pt-0 text-gray-700 leading-relaxed text-sm md:text-base">
-                                <div class="flex items-start gap-3">
-                                    <span class="text-secondary opacity-60 font-black mt-1">A.</span>
-                                    <p>はい、完全にお任せください。弊社では就労可能な在留資格の厳格な確認から、更新時期の管理、行政機関への手続きサポートまで自社システムを用いて徹底して行っております。企業様に不法就労等のコンプライアンス違反リスクを負わせることはありません。</p>
-                                </div>
-                            </div>
-                        </details>
-
-                        <!-- Q4 -->
-                        <details class="group bg-gray-50 rounded-lg border border-gray-200">
-                            <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-5 md:p-6 font-bold text-gray-900">
-                                <span class="flex items-start gap-3 text-base md:text-lg">
-                                    <span class="text-primary opacity-60 font-black">Q.</span>
-                                    派遣ではなく、正社員候補の紹介（紹介予定派遣）は可能ですか？
-                                </span>
-                                <i class="fa-solid fa-chevron-down transition duration-300 group-open:-rotate-180 text-gray-400"></i>
-                            </summary>
-                            <div class="px-5 md:px-6 pb-6 pt-0 text-gray-700 leading-relaxed text-sm md:text-base">
-                                <div class="flex items-start gap-3">
-                                    <span class="text-secondary opacity-60 font-black mt-1">A.</span>
-                                    <p>はい、可能です。弊社は「有料職業紹介事業」の許可も取得しております。一定期間派遣スタッフとして見極めていただいた後、双方合意のもとで貴社の直接雇用（正社員・契約社員）へ切り替える仕組みもご活用いただけます。</p>
-                                </div>
-                            </div>
-                        </details>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Company Profile -->
-            <section id="company" class="py-20 bg-primary text-white">
-                <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="text-center mb-12">
-                        <h2 class="text-3xl font-bold mb-2">会社概要</h2>
-                        <p class="text-blue-200">COMPANY PROFILE</p>
-                    </div>
-
-                    <div class="bg-white text-gray-800 rounded-2xl shadow-xl overflow-hidden">
-                        <div class="p-8 md:p-12">
-                            <div class="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-gray-200 pb-8 mb-8 gap-6">
-                                <div>
-                                    <p class="text-sm text-gray-500 mb-1">ジョブ コネクションズ</p>
-                                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900">JOB CONNECTIONS株式会社</h3>
-                                </div>
-                                <div class="text-sm text-gray-600 space-y-1">
-                                    <p>一般労働者派遣 (派24-300801)</p>
-                                    <p>有料職業紹介事業 (24-ユ-300443)</p>
-                                </div>
-                            </div>
-
-                            <div class="grid grid-cols-1 gap-0">
-                                <div class="flex flex-col md:flex-row border-b border-gray-100 py-4 hover:bg-gray-50 transition">
-                                    <div class="md:w-1/4 font-bold text-primary flex items-center">
-                                        <i class="fa-solid fa-location-dot w-6 text-center mr-2"></i> 所在地
-                                    </div>
-                                    <div class="md:w-3/4 text-gray-700 mt-1 md:mt-0">
-                                        〒510-0944<br>
-                                        <a href="https://www.google.com/maps/dir/?api=1&destination=三重県四日市市笹川五丁目65番地38" target="_blank" class="text-primary hover:text-secondary hover:underline inline-flex items-center transition">
-                                            三重県四日市市笹川五丁目65番地38
-                                            <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1 opacity-70"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="flex flex-col md:flex-row border-b border-gray-100 py-4 hover:bg-gray-50 transition">
-                                    <div class="md:w-1/4 font-bold text-primary flex items-center">
-                                        <i class="fa-solid fa-building w-6 text-center mr-2"></i> 設立
-                                    </div>
-                                    <div class="md:w-3/4 text-gray-700 mt-1 md:mt-0">
-                                        2022年5月9日
-                                    </div>
-                                </div>
-                                <div class="flex flex-col md:flex-row border-b border-gray-100 py-4 hover:bg-gray-50 transition">
-                                    <div class="md:w-1/4 font-bold text-primary flex items-center">
-                                        <i class="fa-solid fa-phone w-6 text-center mr-2"></i> 電話番号
-                                    </div>
-                                    <div class="md:w-3/4 text-gray-700 mt-1 md:mt-0 font-medium">
-                                        059-327-5215
-                                    </div>
-                                </div>
-                                <div class="flex flex-col md:flex-row border-b border-gray-100 py-4 hover:bg-gray-50 transition">
-                                    <div class="md:w-1/4 font-bold text-primary flex items-center">
-                                        <i class="fa-solid fa-envelope w-6 text-center mr-2"></i> メールアドレス
-                                    </div>
-                                    <!-- スパム対策：クリックされるまで非表示。 -->
-                                    <div class="md:w-3/4 text-gray-700 mt-1 md:mt-0 flex items-center">
-                                        <button type="button" onclick="showAndCopyEmail(this)" class="inline-flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-md text-sm transition shadow-sm font-medium border border-gray-200">
-                                            <i class="fa-solid fa-lock text-gray-500"></i> <span>アドレスを表示</span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="flex flex-col md:flex-row py-4 hover:bg-gray-50 transition">
-                                    <div class="md:w-1/4 font-bold text-primary flex items-center">
-                                        <i class="fa-solid fa-clock w-6 text-center mr-2"></i> 営業時間
-                                    </div>
-                                    <div class="md:w-3/4 text-gray-700 mt-1 md:mt-0">
-                                        月〜金 （9:00〜18:00）
-                                    </div>
-                                </div>
-                            </div>
+                    <!-- 業務2 -->
+                    <div class="bg-white rounded-xl p-8 text-center border border-gray-100 hover:shadow-lg transition hover:-translate-y-1">
+                        <div class="w-16 h-16 bg-blue-50 text-primary rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                            <i class="fa-solid fa-clipboard-check"></i>
                         </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">検品・仕分け・梱包</h3>
+                        <p class="text-sm text-gray-600 text-left">製品の目視検査、出荷前の仕分け、丁寧な梱包作業など、品質を担保する重要な工程をお任せください。</p>
                     </div>
-                </div>
-            </section>
-
-            <!-- お問い合わせフォーム Section -->
-            <section id="contact-form" class="py-20 bg-accent">
-                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="text-center mb-12">
-                        <h3 class="text-sm font-bold text-secondary tracking-widest uppercase mb-2">Contact</h3>
-                        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 section-title">無料相談・お問い合わせ</h2>
-                        <p class="text-gray-600 max-w-2xl mx-auto">「まずは現状の課題を聞いてほしい」といったご相談も大歓迎です。<br class="hidden md:block">下記のフォームからお気軽にお問い合わせください。</p>
+                    <!-- 業務3 -->
+                    <div class="bg-white rounded-xl p-8 text-center border border-gray-100 hover:shadow-lg transition hover:-translate-y-1">
+                        <div class="w-16 h-16 bg-blue-50 text-primary rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                            <i class="fa-solid fa-truck-ramp-box"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">フォークリフト・物流</h3>
+                        <p class="text-sm text-gray-600 text-left">有資格者による安全なリフト操作、倉庫内のピッキング、入出荷作業など物流部門を強力にサポートします。</p>
                     </div>
-
-                    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 md:p-12">
-                        <form action="https://formspree.io/f/mdobqgbl" method="POST" id="formContact">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                                <div>
-                                    <label class="block text-sm font-medium text-gray-700">
-                                        お名前 <span class="text-red-500">*</span>
-                                        <input type="text" name="name" id="name" autocomplete="name" placeholder="例: 山田 太郎" required class="w-full mt-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white">
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="block text-sm font-medium text-gray-700">
-                                        メールアドレス <span class="text-red-500">*</span>
-                                        <input type="email" name="email" id="email" autocomplete="email" placeholder="例: info@example.com" required class="w-full mt-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white">
-                                    </label>
-                                </div>
-                            </div>
-                            
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                                <div>
-                                    <label class="block text-sm font-medium text-gray-700">
-                                        会社名 <span class="text-red-500">*</span>
-                                        <input type="text" name="company" id="company" autocomplete="organization" placeholder="例: 株式会社〇〇" required class="w-full mt-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white">
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="block text-sm font-medium text-gray-700">
-                                        電話番号 <span class="text-red-500">*</span>
-                                        <input type="tel" name="phone" id="phone" autocomplete="tel" placeholder="例: 000-0000-0000" required class="w-full mt-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white">
-                                    </label>
-                                </div>
-                            </div>
-
-                            <!-- 表題とヘルプマーク -->
-                            <div class="mb-6">
-                                <div class="flex items-center gap-1.5 mb-1">
-                                    <!-- ツールチップ親要素を先頭（左側）に配置 -->
-                                    <div class="relative flex items-center group">
-                                        <i class="fa-solid fa-circle-question text-gray-400 hover:text-primary cursor-help text-sm"></i>
-                                        <!-- 吹き出しツールチップ -->
-                                        <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 p-2.5 bg-gray-800 text-white text-xs rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-200 z-50 text-center leading-normal">
-                                            選択すると、詳細内容にテンプレートが自動入力されます。ご相談にご活用ください。
-                                            <div class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 border-4 border-transparent border-t-gray-800"></div>
-                                        </div>
-                                    </div>
-                                    <label for="subject" class="block text-sm font-medium text-gray-700">ご相談内容（表題） <span class="text-red-500">*</span></label>
-                                </div>
-                                <div class="relative">
-                                    <select name="subject" id="subject" autocomplete="off" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white appearance-none cursor-pointer font-medium text-gray-700">
-                                        <option value="" disabled selected>以下からご希望の相談内容を選択してください</option>
-                                        <option value="現場の定着率・離職率に関するご相談">現場の定着率・離職率に関するご相談</option>
-                                        <option value="急な人材不足・増員に関するご相談">急な人材不足・増員に関するご相談</option>
-                                        <option value="外国人材の活用・労務管理に関するご相談">外国人材の活用・労務管理に関するご相談</option>
-                                        <option value="その他のお問い合わせ">その他のお問い合わせ</option>
-                                    </select>
-                                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-500">
-                                        <i class="fa-solid fa-chevron-down text-sm"></i>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mb-8">
-                                <label for="contents" class="block text-sm font-medium text-gray-700 mb-1">詳細内容 <span class="text-red-500">*</span></label>
-                                <div class="relative">
-                                    <!-- 詳細エリア フォーカス時に浮かび上がるガイドツールチップ -->
-                                    <div id="contents-tooltip" class="absolute bottom-full left-4 mb-2.5 z-30 w-72 p-3 bg-blue-600 text-white text-xs rounded-lg shadow-xl pointer-events-none opacity-0 transition-all duration-300 transform translate-y-2">
-                                        <p class="font-bold flex items-center gap-1.5 mb-1 text-white">
-                                            <i class="fa-solid fa-lightbulb"></i> ワンポイントアドバイス
-                                        </p>
-                                        上の「ご相談内容（表題）」を選択すると、ここに入力用のテンプレートが自動的に挿入されます！
-                                        <div class="absolute top-full left-6 -mt-1 border-4 border-transparent border-t-blue-600"></div>
-                                    </div>
-                                    <textarea name="contents" id="contents" autocomplete="off" rows="7" placeholder="上の「ご相談内容」を選択すると、ここに入力用のテンプレートが表示されます。" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white leading-relaxed resize-y"></textarea>
-                                </div>
-                            </div>
-
-                            <div id="formContactStatus" class="mb-4 text-center text-sm font-medium text-gray-700"></div>
-
-                            <div class="text-center mb-8">
-                                <p class="text-sm text-gray-500">※ご相談内容を確認後、担当者より１～３営業日以内にご連絡いたします。</p>
-                            </div>
-
-                            <div class="text-center">
-                                <button type="submit" class="bg-primary hover:bg-blue-800 text-white px-10 py-4 rounded-full font-bold text-lg transition shadow-md flex items-center justify-center gap-2 mx-auto w-full sm:w-auto">
-                                    <i class="fa-regular fa-paper-plane"></i> 送信する
-                                </button>
-                            </div>
-                        </form>
+                    <!-- 業務4 -->
+                    <div class="bg-white rounded-xl p-8 text-center border border-gray-100 hover:shadow-lg transition hover:-translate-y-1">
+                        <div class="w-16 h-16 bg-blue-50 text-primary rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">機械オペレーター</h3>
+                        <p class="text-sm text-gray-600 text-left">NC旋盤やプレス機など、特定の機械操作。専門用語が飛び交う現場でも、通訳を交えてスムーズに導入可能です。</p>
                     </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- ========================================== -->
-        <!-- ページ：プライバシーポリシー (#privacy)      -->
-        <!-- ========================================== -->
-        <div id="page-privacy" class="page-content">
-            <div class="bg-primary text-white py-12">
-                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 class="text-3xl font-bold mb-2">プライバシーポリシー</h2>
-                    <p class="text-blue-200 text-sm uppercase tracking-widest">Privacy Policy</p>
                 </div>
             </div>
+        </section>
 
-            <div class="py-12 md:py-20 bg-gray-50">
-                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="bg-white rounded-2xl shadow-sm p-6 md:p-12 border border-gray-100">
-                        <p class="mb-8 text-gray-600 leading-relaxed">
-                            JOB CONNECTIONS株式会社（以下「当社」）は、一般労働者派遣事業および有料職業紹介事業を営む企業として、個人情報の保護を重大な社会的責任と認識しております。当社は、以下の通りプライバシーポリシー（個人情報保護方針）を定め、全従業員に周知徹底し、個人情報の適切な保護と管理に努めます。
+        <!-- 3つの試練 Section -->
+        <section id="trials" class="py-20 bg-accent">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <p class="text-sm font-bold text-secondary tracking-widest uppercase mb-2">Selection Process</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 section-title">3つの試練</h2>
+                    <p class="text-xl text-gray-700 font-medium">オンラインで見抜けない「人柄」と「覚悟」を試す</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-primary hover:-translate-y-2 transition duration-300">
+                        <div class="w-16 h-16 bg-blue-100 text-primary rounded-full flex items-center justify-center text-3xl mb-6 mx-auto">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div class="text-center mb-4">
+                            <span class="text-secondary font-bold text-lg">試練 #1</span>
+                            <h3 class="text-2xl font-bold text-gray-900 mt-1">初回通話</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            初回通話時に弊社事務所への来訪を打診します。この段階で少しでも難色を示す候補者は、就業への意欲や覚悟が不足していると判断し、次選考へ進めることはありません。
                         </p>
-
-                        <div class="space-y-8">
-                            <section>
-                                <h3 class="text-xl font-bold text-primary mb-4 border-b-2 border-blue-100 pb-2">1. 個人情報の取得と利用目的</h3>
-                                <p class="text-gray-600 leading-relaxed mb-3">当社は、適法かつ公正な手段によって個人情報を取得し、以下の目的の範囲内で利用いたします。ご本人の同意がある場合または法令に基づく場合を除き、利用目的の達成に必要な範囲を超えて個人情報を取り扱うことはありません。</p>
-                                <ul class="list-disc list-inside text-gray-600 leading-relaxed pl-2 space-y-1">
-                                    <li>労働者派遣、職業紹介、およびこれらに付随するサービスの提供のため</li>
-                                    <li>お仕事の案内、就業に関する連絡、面談の設定のため</li>
-                                    <li>就業時の労務管理、給与計算、社会保険等の各種手続きのため</li>
-                                    <li>在留資格の確認および行政機関への申請サポートのため（外国籍スタッフの場合）</li>
-                                    <li>当社のサービス向上を目的としたアンケート調査や統計データの作成のため</li>
-                                    <li>お問い合わせやご相談への回答・対応のため</li>
-                                </ul>
-                            </section>
-
-                            <section>
-                                <h3 class="text-xl font-bold text-primary mb-4 border-b-2 border-blue-100 pb-2">2. 個人情報の第三者への提供</h3>
-                                <p class="text-gray-600 leading-relaxed">当社は、次の場合を除き、取得した個人情報を第三者に提供・開示いたしません。</p>
-                                <ul class="list-disc list-inside text-gray-600 leading-relaxed pl-2 mt-3 space-y-1">
-                                    <li>ご本人の事前の同意がある場合</li>
-                                    <li>派遣先または紹介先企業に対し、業務遂行能力の確認や就業のための手続き等、必要な範囲で提供する場合</li>
-                                    <li>法令等に基づき、裁判所・警察機関などの公的機関から開示の要請があった場合</li>
-                                    <li>人の生命、身体または財産の保護のために必要があり、ご本人の同意を得ることが困難な場合</li>
-                                </ul>
-                            </section>
-
-                            <section>
-                                <h3 class="text-xl font-bold text-primary mb-4 border-b-2 border-blue-100 pb-2">3. 個人情報の安全管理措置</h3>
-                                <p class="text-gray-600 leading-relaxed">当社は、取り扱う個人情報の漏洩、滅失、き損の防止、その他個人情報の安全管理のために必要かつ適切な措置を講じます。また、従業員に対して個人情報保護のための教育を定期的に実施し、適正な取り扱いを徹底します。</p>
-                            </section>
-
-                            <section>
-                                <h3 class="text-xl font-bold text-primary mb-4 border-b-2 border-blue-100 pb-2">4. 個人情報の開示・訂正・利用停止・削除</h3>
-                                <p class="text-gray-600 leading-relaxed">当社は、ご本人から自己の個人情報についての開示、訂正、追加、削除、利用停止等のお申し出があった場合には、ご本人であることを確認の上、法令の規定に基づき速やかに対応いたします。</p>
-                            </section>
-
-                            <section>
-                                <h3 class="text-xl font-bold text-primary mb-4 border-b-2 border-blue-100 pb-2">5. プライバシーポリシーの変更</h3>
-                                <p class="text-gray-600 leading-relaxed">当社は、法令の改正や事業内容の変更等により、本プライバシーポリシーを事前の予告なく変更することがあります。変更後のポリシーは、本ウェブサイトに掲載した時点から効力を生じるものとします。</p>
-                            </section>
-
-                            <section>
-                                <h3 class="text-xl font-bold text-primary mb-4 border-b-2 border-blue-100 pb-2">6. お問い合わせ窓口</h3>
-                                <p class="text-gray-600 leading-relaxed mb-4">当社の個人情報の取り扱いに関するお問い合わせ、苦情、ご相談につきましては、下記窓口までご連絡ください。</p>
-                                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
-                                    <h4 class="font-bold text-gray-900 mb-2">JOB CONNECTIONS株式会社 個人情報相談窓口</h4>
-                                    <p class="text-gray-700 leading-relaxed">
-                                        〒510-0944<br>
-                                        三重県四日市市笹川五丁目65番地38<br>
-                                        電話番号：059-327-5215 （受付時間：平日 9:00〜18:00）<br>
-                                        <div class="flex items-center mt-1">
-                                            <span class="mr-2">メールアドレス：</span>
-                                            <!-- スパム対策 -->
-                                            <button type="button" onclick="showAndCopyEmail(this)" class="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-gray-700 px-3 py-1 rounded text-sm transition border border-gray-300 shadow-sm">
-                                                <i class="fa-solid fa-lock text-gray-500"></i> <span>表示する</span>
-                                            </button>
-                                        </div>
-                                    </p>
-                                </div>
-                            </section>
-                        </div>
-                        
-                        <div class="mt-12 text-right text-gray-500 text-sm">
-                            制定日：2026年06月01日<br>
-                            JOB CONNECTIONS株式会社<br>
-                        </div>
-
                     </div>
-                    
-                    <div class="mt-8 text-center">
-                        <a href="#home" class="inline-flex items-center text-primary hover:text-secondary font-medium transition">
-                            <i class="fa-solid fa-arrow-left mr-2"></i> トップページへ戻る
-                        </a>
+
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-primary hover:-translate-y-2 transition duration-300">
+                        <div class="w-16 h-16 bg-blue-100 text-primary rounded-full flex items-center justify-center text-3xl mb-6 mx-auto">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div class="text-center mb-4">
+                            <span class="text-secondary font-bold text-lg">試練 #2</span>
+                            <h3 class="text-2xl font-bold text-gray-900 mt-1">対面での面談</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            弊社は必ず事務所での対面面談を実施します。実際に会うことで、履歴書だけでは見えない人柄や製造現場への熱意を、ベテラン担当者が多角的に評価・選別します。
+                        </p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-primary hover:-translate-y-2 transition duration-300">
+                        <div class="w-16 h-16 bg-blue-100 text-primary rounded-full flex items-center justify-center text-3xl mb-6 mx-auto">
+                            <i class="fa-solid fa-industry"></i>
+                        </div>
+                        <div class="text-center mb-4">
+                            <span class="text-secondary font-bold text-lg">試練 #3</span>
+                            <h3 class="text-2xl font-bold text-gray-900 mt-1">「職場見学」の徹底</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            採用後の「思っていたのと違う」をゼロにするため、必ず事前に職場を見て、感じて、納得した上で合意していただきます。このひと手間が、高い定着率と現場の安定に繋がります。
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
+        <!-- 3つの伴走 Section -->
+        <section id="support" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <p class="text-sm font-bold text-secondary tracking-widest uppercase mb-2">Our Support</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 section-title">3つの伴走</h2>
+                    <p class="text-xl text-gray-700 font-medium">試練を越えた『人財』を、現場で輝かせ続ける</p>
+                </div>
+
+                <div class="space-y-12">
+                    <div class="flex flex-col md:flex-row items-center gap-8 bg-gray-50 rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100">
+                        <div class="md:w-1/4 flex justify-center">
+                            <div class="w-32 h-32 bg-white rounded-full shadow-md flex items-center justify-center text-primary text-5xl border-4 border-blue-50">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-3/4 text-center md:text-left">
+                            <span class="inline-block bg-secondary text-white px-3 py-1 rounded text-sm font-bold mb-3">伴走 #1</span>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">即応体制の現場フォロー</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                急な欠勤やトラブル発生時にも、弊社スタッフが徹底した「報告・連絡・相談」で迅速に対応いたします。<br>
+                                人事担当者様や現場責任者様の管理負担を極限まで減らし、貴重な工場のライン稼働を絶対に止めない体制を構築しています。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row-reverse items-center gap-8 bg-gray-50 rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100">
+                        <div class="md:w-1/4 flex justify-center">
+                            <div class="w-32 h-32 bg-white rounded-full shadow-md flex items-center justify-center text-primary text-5xl border-4 border-blue-50 relative">
+                                <i class="fa-solid fa-earth-asia"></i>
+                                <div class="absolute -top-2 -right-2 bg-secondary text-white text-xs font-bold w-8 h-8 rounded-full flex items-center justify-center">EN</div>
+                                <div class="absolute -bottom-2 -left-2 bg-secondary text-white text-xs font-bold w-8 h-8 rounded-full flex items-center justify-center">中文</div>
+                            </div>
+                        </div>
+                        <div class="md:w-3/4 text-center md:text-left">
+                            <span class="inline-block bg-secondary text-white px-3 py-1 rounded text-sm font-bold mb-3">伴走 #2</span>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">言葉の壁をゼロに</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                製造現場の労働力確保のため、弊社では意欲ある外国籍スタッフも多く活躍しています。<br>
+                                現場での専門的な指示伝達や、万が一のトラブル発生時など、必要に応じて専任担当者が即時通訳を実施。言語の相違によるコミュニケーションロスや事故を未然に防ぎ、安全な現場運営をサポートします。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row items-center gap-8 bg-gray-50 rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100">
+                        <div class="md:w-1/4 flex justify-center">
+                            <div class="w-32 h-32 bg-white rounded-full shadow-md flex items-center justify-center text-primary text-5xl border-4 border-blue-50">
+                                <i class="fa-solid fa-shield-heart"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-3/4 text-center md:text-left">
+                            <span class="inline-block bg-secondary text-white px-3 py-1 rounded text-sm font-bold mb-3">伴走 #3</span>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">生活・行政手続きの支援</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                複雑な在留資格の管理・更新サポートから、急な体調不良時の通院、役所等の行政機関への付き添いまで、就業時間外の生活面も徹底的にサポートします。<br>
+                                スタッフが余計な不安を抱えず、目の前の仕事に100%集中できる環境を整えることが、長期的な定着率の向上に繋がっています。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 導入までの流れ Section -->
+        <section id="flow" class="py-20 bg-gray-900 text-white relative overflow-hidden">
+            <!-- 背景の装飾 -->
+            <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-primary opacity-20 blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-secondary opacity-20 blur-3xl"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center mb-16">
+                    <p class="text-sm font-bold text-secondary tracking-widest uppercase mb-2">Flow</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 section-title">導入までの流れ</h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto">最短ルートで現場の課題解決へ。まずはお気軽にご相談ください。</p>
+                </div>
+
+                <div class="relative max-w-5xl mx-auto">
+                    <!-- デスクトップ用の横線 -->
+                    <div class="hidden md:block absolute top-12 left-0 w-full h-1 bg-gray-700 -translate-y-1/2 z-0"></div>
+                    
+                    <div class="flex flex-col md:flex-row justify-between gap-8 md:gap-4 relative z-10">
+                        <!-- Step 1 -->
+                        <div class="flex flex-col items-center text-center md:w-1/4">
+                            <div class="w-24 h-24 bg-gray-800 text-secondary rounded-full flex items-center justify-center text-3xl mb-6 border-4 border-gray-900 shadow-xl relative">
+                                <i class="fa-solid fa-comments"></i>
+                                <div class="absolute -top-3 -right-3 w-8 h-8 bg-primary text-white text-xs font-bold rounded-full flex items-center justify-center border-2 border-gray-900">01</div>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">無料ご相談・ヒアリング</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">現場が抱える課題、必要な人員数、求めるスキルや就業時期などを丁寧にヒアリングいたします。</p>
+                        </div>
+                        
+                        <!-- Step 2 -->
+                        <div class="flex flex-col items-center text-center md:w-1/4">
+                            <div class="w-24 h-24 bg-gray-800 text-secondary rounded-full flex items-center justify-center text-3xl mb-6 border-4 border-gray-900 shadow-xl relative">
+                                <i class="fa-solid fa-user-check"></i>
+                                <div class="absolute -top-3 -right-3 w-8 h-8 bg-primary text-white text-xs font-bold rounded-full flex items-center justify-center border-2 border-gray-900">02</div>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">人材選定・職場見学</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">「3つの試練」をクリアした最適な人材を選出し、必ず事前に職場見学を実施。ミスマッチを防ぎます。</p>
+                        </div>
+                        
+                        <!-- Step 3 -->
+                        <div class="flex flex-col items-center text-center md:w-1/4">
+                            <div class="w-24 h-24 bg-gray-800 text-secondary rounded-full flex items-center justify-center text-3xl mb-6 border-4 border-gray-900 shadow-xl relative">
+                                <i class="fa-solid fa-file-signature"></i>
+                                <div class="absolute -top-3 -right-3 w-8 h-8 bg-primary text-white text-xs font-bold rounded-full flex items-center justify-center border-2 border-gray-900">03</div>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">ご契約・就業開始</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">派遣法に基づいた適正な契約手続きを行います。独自のシステム管理により、書類関係の手間も取らせません。</p>
+                        </div>
+                        
+                        <!-- Step 4 -->
+                        <div class="flex flex-col items-center text-center md:w-1/4">
+                            <div class="w-24 h-24 bg-primary text-white rounded-full flex items-center justify-center text-3xl mb-6 border-4 border-gray-900 shadow-xl relative">
+                                <i class="fa-solid fa-handshake-angle"></i>
+                                <div class="absolute -top-3 -right-3 w-8 h-8 bg-secondary text-white text-xs font-bold rounded-full flex items-center justify-center border-2 border-gray-900">04</div>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">定期的な現場フォロー</h3>
+                            <p class="text-sm text-gray-300 leading-relaxed">就業後からが本当のスタートです。「3つの伴走」により、現場責任者様の負担を減らし定着率を高めます。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-16 text-center">
+                    <a href="#contact-form" class="inline-block bg-white text-gray-900 hover:bg-gray-100 px-8 py-4 rounded-full font-bold transition shadow-lg">
+                        今すぐ課題を相談してみる <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- よくあるご質問 (FAQ) Section -->
+        <section id="faq" class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <p class="text-sm font-bold text-secondary tracking-widest uppercase mb-2">FAQ</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 section-title">よくあるご質問</h2>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- Q1 -->
+                    <details class="group bg-gray-50 rounded-lg border border-gray-200" open>
+                        <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-5 md:p-6 font-bold text-gray-900">
+                            <span class="flex items-start gap-3 text-base md:text-lg">
+                                <span class="text-primary opacity-60 font-black">Q.</span>
+                                最短でいつから派遣してもらえますか？
+                            </span>
+                            <i class="fa-solid fa-chevron-down transition duration-300 group-open:-rotate-180 text-gray-400"></i>
+                        </summary>
+                        <div class="px-5 md:px-6 pb-6 pt-0 text-gray-700 leading-relaxed text-sm md:text-base">
+                            <div class="flex items-start gap-3">
+                                <span class="text-secondary opacity-60 font-black mt-1">A.</span>
+                                <p>ご依頼の職種や条件によりますが、最短でご相談から1〜2週間程度での就業開始が可能です。急な欠員などでお急ぎの場合は、まずは一度状況をお聞かせください。</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Q2 -->
+                    <details class="group bg-gray-50 rounded-lg border border-gray-200">
+                        <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-5 md:p-6 font-bold text-gray-900">
+                            <span class="flex items-start gap-3 text-base md:text-lg">
+                                <span class="text-primary opacity-60 font-black">Q.</span>
+                                夜勤のみ、または短期の依頼は可能ですか？
+                            </span>
+                            <i class="fa-solid fa-chevron-down transition duration-300 group-open:-rotate-180 text-gray-400"></i>
+                        </summary>
+                        <div class="px-5 md:px-6 pb-6 pt-0 text-gray-700 leading-relaxed text-sm md:text-base">
+                            <div class="flex items-start gap-3">
+                                <span class="text-secondary opacity-60 font-black mt-1">A.</span>
+                                <p>もちろん可能です。夜勤専属や交替制シフト、あるいは繁忙期のみの数ヶ月間の短期派遣など、貴社の生産計画に合わせた柔軟な人員配置をご提案いたします。</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Q3 -->
+                    <details class="group bg-gray-50 rounded-lg border border-gray-200">
+                        <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-5 md:p-6 font-bold text-gray-900">
+                            <span class="flex items-start gap-3 text-base md:text-lg">
+                                <span class="text-primary opacity-60 font-black">Q.</span>
+                                外国籍スタッフの在留資格などの管理はお任せできますか？
+                            </span>
+                            <i class="fa-solid fa-chevron-down transition duration-300 group-open:-rotate-180 text-gray-400"></i>
+                        </summary>
+                        <div class="px-5 md:px-6 pb-6 pt-0 text-gray-700 leading-relaxed text-sm md:text-base">
+                            <div class="flex items-start gap-3">
+                                <span class="text-secondary opacity-60 font-black mt-1">A.</span>
+                                <p>はい、完全にお任せください。弊社では就労可能な在留資格の厳格な確認から、更新時期の管理、行政機関への手続きサポートまで自社システムを用いて徹底して行っております。企業様に不法就労等のコンプライアンス違反リスクを負わせることはありません。</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Q4 -->
+                    <details class="group bg-gray-50 rounded-lg border border-gray-200">
+                        <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-5 md:p-6 font-bold text-gray-900">
+                            <span class="flex items-start gap-3 text-base md:text-lg">
+                                <span class="text-primary opacity-60 font-black">Q.</span>
+                                派遣ではなく、正社員候補の紹介（紹介予定派遣）は可能ですか？
+                            </span>
+                            <i class="fa-solid fa-chevron-down transition duration-300 group-open:-rotate-180 text-gray-400"></i>
+                        </summary>
+                        <div class="px-5 md:px-6 pb-6 pt-0 text-gray-700 leading-relaxed text-sm md:text-base">
+                            <div class="flex items-start gap-3">
+                                <span class="text-secondary opacity-60 font-black mt-1">A.</span>
+                                <p>はい、可能です。弊社は「有料職業紹介事業」の許可も取得しております。一定期間派遣スタッフとして見極めていただいた後、双方合意のもとで貴社の直接雇用（正社員・契約社員）へ切り替える仕組みもご活用いただけます。</p>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Profile Section -->
+        <section id="company" class="py-20 bg-primary text-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-2">会社概要</h2>
+                    <p class="text-blue-200">COMPANY PROFILE</p>
+                </div>
+
+                <div class="bg-white text-gray-800 rounded-2xl shadow-xl overflow-hidden">
+                    <div class="p-8 md:p-12">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-gray-200 pb-8 mb-8 gap-6">
+                            <div>
+                                <p class="text-sm text-gray-500 mb-1">ジョブ コネクションズ</p>
+                                <h3 class="text-2xl md:text-3xl font-bold text-gray-900">JOB CONNECTIONS株式会社</h3>
+                            </div>
+                            <div class="text-sm text-gray-600 space-y-1">
+                                <p>一般労働者派遣 (派24-300801)</p>
+                                <p>有料職業紹介事業 (24-ユ-300443)</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 gap-0">
+                            <div class="flex flex-col md:flex-row border-b border-gray-100 py-4 hover:bg-gray-50 transition">
+                                <div class="md:w-1/4 font-bold text-primary flex items-center">
+                                    <i class="fa-solid fa-location-dot w-6 text-center mr-2"></i> 所在地
+                                </div>
+                                <div class="md:w-3/4 text-gray-700 mt-1 md:mt-0">
+                                    〒510-0944<br>
+                                    <a href="https://www.google.com/maps/dir/?api=1&destination=三重県四日市市笹川五丁目65番地38" target="_blank" class="text-primary hover:text-secondary hover:underline inline-flex items-center transition">
+                                        三重県四日市市笹川五丁目65番地38
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1 opacity-70"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex flex-col md:flex-row border-b border-gray-100 py-4 hover:bg-gray-50 transition">
+                                <div class="md:w-1/4 font-bold text-primary flex items-center">
+                                    <i class="fa-solid fa-building w-6 text-center mr-2"></i> 設立
+                                </div>
+                                <div class="md:w-3/4 text-gray-700 mt-1 md:mt-0">
+                                    2022年5月9日
+                                </div>
+                            </div>
+                            <div class="flex flex-col md:flex-row border-b border-gray-100 py-4 hover:bg-gray-50 transition">
+                                <div class="md:w-1/4 font-bold text-primary flex items-center">
+                                    <i class="fa-solid fa-phone w-6 text-center mr-2"></i> 電話番号
+                                </div>
+                                <div class="md:w-3/4 text-gray-700 mt-1 md:mt-0 font-medium">
+                                    059-327-5215
+                                </div>
+                            </div>
+                            <div class="flex flex-col md:flex-row border-b border-gray-100 py-4 hover:bg-gray-50 transition">
+                                <div class="md:w-1/4 font-bold text-primary flex items-center">
+                                    <i class="fa-solid fa-envelope w-6 text-center mr-2"></i> メールアドレス
+                                </div>
+                                <!-- スパム対策：クリックされるまで非表示。 -->
+                                <div class="md:w-3/4 text-gray-700 mt-1 md:mt-0 flex items-center">
+                                    <button type="button" onclick="showAndCopyEmail(this)" class="inline-flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-md text-sm transition shadow-sm font-medium border border-gray-200">
+                                        <i class="fa-solid fa-lock text-gray-500"></i> <span>アドレスを表示</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="flex flex-col md:flex-row py-4 hover:bg-gray-50 transition">
+                                <div class="md:w-1/4 font-bold text-primary flex items-center">
+                                    <i class="fa-solid fa-clock w-6 text-center mr-2"></i> 営業時間
+                                </div>
+                                <div class="md:w-3/4 text-gray-700 mt-1 md:mt-0">
+                                    月〜金 （9:00〜18:00）
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- お問い合わせフォーム Section -->
+        <section id="contact-form" class="py-20 bg-accent">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <p class="text-sm font-bold text-secondary tracking-widest uppercase mb-2">Contact</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 section-title">無料相談・お問い合わせ</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">「まずは現状の課題を聞いてほしい」といったご相談も大歓迎です。<br class="hidden md:block">下記のフォームからお気軽にお問い合わせください。</p>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 md:p-12">
+                    <form action="https://formspree.io/f/mdobqgbl" method="POST" id="formContact">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">
+                                    お名前 <span class="text-red-500">*</span>
+                                    <input type="text" name="name" id="name" autocomplete="name" placeholder="例: 山田 太郎" required class="w-full mt-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white">
+                                </label>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">
+                                    メールアドレス <span class="text-red-500">*</span>
+                                    <input type="email" name="email" id="email" autocomplete="email" placeholder="例: info@example.com" required class="w-full mt-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white">
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">
+                                    会社名 <span class="text-red-500">*</span>
+                                    <input type="text" name="company" id="company" autocomplete="organization" placeholder="例: 株式会社〇〇" required class="w-full mt-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white">
+                                </label>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">
+                                    電話番号 <span class="text-red-500">*</span>
+                                    <input type="tel" name="phone" id="phone" autocomplete="tel" placeholder="例: 000-0000-0000" required class="w-full mt-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white">
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- 表題とヘルプマーク -->
+                        <div class="mb-6">
+                            <div class="flex items-center gap-1.5 mb-1">
+                                <div class="relative flex items-center group">
+                                    <i class="fa-solid fa-circle-question text-gray-400 hover:text-primary cursor-help text-sm"></i>
+                                    <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 p-2.5 bg-gray-800 text-white text-xs rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-200 z-50 text-center leading-normal">
+                                        選択すると、詳細内容にテンプレートが自動入力されます。ご相談にご活用ください。
+                                        <div class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 border-4 border-transparent border-t-gray-800"></div>
+                                    </div>
+                                </div>
+                                <label for="subject" class="block text-sm font-medium text-gray-700">ご相談内容（表題） <span class="text-red-500">*</span></label>
+                            </div>
+                            <div class="relative">
+                                <select name="subject" id="subject" autocomplete="off" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white appearance-none cursor-pointer font-medium text-gray-700">
+                                    <option value="" disabled selected>以下からご希望の相談内容を選択してください</option>
+                                    <option value="現場の定着率・離職率に関するご相談">現場の定着率・離職率に関するご相談</option>
+                                    <option value="急な人材不足・増員に関するご相談">急な人材不足・増員に関するご相談</option>
+                                    <option value="外国人材の活用・労務管理に関するご相談">外国人材の活用・労務管理に関するご相談</option>
+                                    <option value="その他のお問い合わせ">その他のお問い合わせ</option>
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-500">
+                                    <i class="fa-solid fa-chevron-down text-sm"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-8">
+                            <label for="contents" class="block text-sm font-medium text-gray-700 mb-1">詳細内容 <span class="text-red-500">*</span></label>
+                            <div class="relative">
+                                <div id="contents-tooltip" class="absolute bottom-full left-4 mb-2.5 z-30 w-72 p-3 bg-blue-600 text-white text-xs rounded-lg shadow-xl pointer-events-none opacity-0 transition-all duration-300 transform translate-y-2">
+                                    <p class="font-bold flex items-center gap-1.5 mb-1 text-white">
+                                        <i class="fa-solid fa-lightbulb"></i> ワンポイントアドバイス
+                                    </p>
+                                    上の「ご相談内容（表題）」を選択すると、ここに入力用のテンプレートが自動的に挿入されます！
+                                    <div class="absolute top-full left-6 -mt-1 border-4 border-transparent border-t-blue-600"></div>
+                                </div>
+                                <textarea name="contents" id="contents" autocomplete="off" rows="7" placeholder="上の「ご相談内容」を選択すると、ここに入力用のテンプレートが表示されます。" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white leading-relaxed resize-y"></textarea>
+                            </div>
+                        </div>
+
+                        <div id="formContactStatus" class="mb-4 text-center text-sm font-medium text-gray-700"></div>
+
+                        <div class="text-center mb-8">
+                            <p class="text-sm text-gray-500">※ご相談内容を確認後、担当者より１～３営業日以内にご連絡いたします。</p>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="bg-primary hover:bg-blue-800 text-white px-10 py-4 rounded-full font-bold text-lg transition shadow-md flex items-center justify-center gap-2 mx-auto w-full sm:w-auto">
+                                <i class="fa-regular fa-paper-plane"></i> 送信する
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- 共通 Footer -->
@@ -778,13 +730,12 @@
                 &copy; 2026 JOB CONNECTIONS Co., Ltd. All Rights Reserved.
             </div>
             <div class="flex flex-wrap gap-4 md:justify-end">
-                <!-- PDFファイルのパスは本番環境に合わせて変更してください -->
-                <a  href="https://raw.githubusercontent.com/jobconnections/jobconnections.github.io/4a00fde6366464e8322b58e88e0015d2400a7e7c/assets/pdf/2024年度：マージン率等の情報提供について：JOB CONNECTIONS（株）.pdf"
+                <a href="https://raw.githubusercontent.com/jobconnections/jobconnections.github.io/4a00fde6366464e8322b58e88e0015d2400a7e7c/assets/pdf/2024年度：マージン率等の情報提供について：JOB CONNECTIONS（株）.pdf"
                     target="_blank"
                     class="hover:text-white transition flex items-center gap-1">
                     <i class="fa-solid fa-file-pdf opacity-70"></i> マージン率等に関する情報提供
                 </a>
-                <a href="#privacy" class="hover:text-white transition">
+                <a href="privacy.html" class="hover:text-white transition">
                     <i class="fa-solid fa-file-text opacity-70"></i> プライバシーポリシー
                 </a>
             </div>

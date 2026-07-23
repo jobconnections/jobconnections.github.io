@@ -112,37 +112,30 @@ if (contentsArea && contentsTooltip && subjectSelect) {
 
 
 
-// === SPAルーティング制御 ===
+// === ページ内スクロール＆後方互換ルーティング制御 ===
 function handleRouting() {
-    const hash = window.location.hash || '#home';
+    const hash = window.location.hash;
     
-    document.querySelectorAll('.page-content').forEach(el => {
-        el.classList.remove('active');
-    });
-
+    // 旧URL (index.html#privacy) へのアクセス時は privacy.html にリダイレクト
     if (hash === '#privacy') {
-        document.getElementById('page-privacy').classList.add('active');
-        window.scrollTo(0, 0);
-    } else {
-        document.getElementById('page-home').classList.add('active');
-        
-        if (hash !== '#home' && hash.length > 1) {
-            const sectionId = hash.substring(1);
-            const el = document.getElementById(sectionId);
-            if (el) {
-                setTimeout(() => {
-                    // ヘッダーの高さを考慮してスクロール位置を調整
-                    const headerOffset = 80;
-                    const elementPosition = el.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: "smooth"
-                    });
-                }, 50);
-            }
-        } else {
-            window.scrollTo(0, 0);
+        window.location.replace('privacy.html');
+        return;
+    }
+
+    if (hash && hash.length > 1 && hash !== '#home') {
+        const sectionId = hash.substring(1);
+        const el = document.getElementById(sectionId);
+        if (el) {
+            setTimeout(() => {
+                // ヘッダーの高さを考慮してスクロール位置を調整
+                const headerOffset = 80;
+                const elementPosition = el.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }, 50);
         }
     }
 }
